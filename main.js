@@ -43,7 +43,7 @@ main.addEventListener("mousedown", (e) => {
     cloneElem.onmouseup = function (e) {
       dndElem.style.opacity = 1;
       cloneElem.remove();
-      //   dndElem = null;
+
       document.onmousemove = null;
       cloneElem.onmouseup = null;
     };
@@ -60,6 +60,7 @@ main.addEventListener("mouseover", (e) => {
     druging = false;
   } else {
     overItem = null;
+    druging = false;
   }
 });
 
